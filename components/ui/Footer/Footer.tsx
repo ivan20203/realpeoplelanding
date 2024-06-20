@@ -79,15 +79,30 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex items-start col-span-1 text-white lg:col-span-6 lg:justify-end">
-          <div className="flex items-center h-10 space-x-6">
-            <a
-              aria-label="Github Repository"
-              href="https://github.com/vercel/nextjs-subscription-payments"
-            >
-              <GitHub />
-            </a>
-          </div>
+        <div className="col-span-1 lg:col-span-2">
+          <ul className="flex flex-col flex-initial md:flex-1">
+            <li className="py-3 md:py-0 md:pb-4">
+              <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+                SUBSCRIPTION
+              </p>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="/pricing"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Pricing
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="/"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="flex flex-col items-center justify-between py-12 space-y-4 md:flex-row bg-zinc-900">
@@ -105,8 +120,28 @@ export default function Footer() {
               className="inline-block h-6 ml-4 text-white"
             />
           </a>
+          <div className="flex items-start col-span-1 text-white lg:col-span-6 lg:justify-end">
+            <div className="flex items-center h-10 space-x-6">
+              <a
+                aria-label="Github Repository"
+                href="https://github.com/vercel/nextjs-subscription-payments"
+                className="ml-4" 
+              >
+                <GitHub />
+              </a>
+            </div>
+          </div>
+          {/* <a href="https://supabase.com" aria-label="Supabase.com Link">
+            <img
+              src="/supabase.svg"
+              alt="supabase.com Logo"
+              className="inline-block h-6 ml-4 text-white"
+            />
+          </a> */}
         </div>
+        
       </div>
+      
     </footer>
   );
 }
