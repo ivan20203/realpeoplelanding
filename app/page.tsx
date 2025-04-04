@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white dark:bg-gray-900">
+      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white dark:bg-gray-950">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -36,11 +36,11 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-800">
+      <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-pink-100 dark:bg-gray-700 px-3 py-1 text-sm text-pink-600 dark:text-pink-400">
+              <div className="inline-block rounded-lg bg-pink-100 dark:bg-gray-800 px-3 py-1 text-sm text-pink-600 dark:text-pink-400">
                 Features
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900 dark:text-white">
@@ -53,8 +53,8 @@ export default function HomePage() {
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-12 mt-12">
             {/* Feature 1 */}
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 dark:border-gray-700 p-6 bg-white dark:bg-gray-900">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 text-pink-600 dark:text-pink-400">
+            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 dark:border-gray-700 p-6 bg-white dark:bg-gray-800">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-700 text-pink-600 dark:text-pink-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -77,8 +77,8 @@ export default function HomePage() {
             </div>
             
             {/* Feature 2 */}
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 dark:border-gray-700 p-6 bg-white dark:bg-gray-900">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 text-pink-600 dark:text-pink-400">
+            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 dark:border-gray-700 p-6 bg-white dark:bg-gray-800">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-700 text-pink-600 dark:text-pink-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -101,8 +101,8 @@ export default function HomePage() {
             </div>
             
             {/* Feature 3 */}
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 dark:border-gray-700 p-6 bg-white dark:bg-gray-900">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 text-pink-600 dark:text-pink-400">
+            <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 dark:border-gray-700 p-6 bg-white dark:bg-gray-800">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-700 text-pink-600 dark:text-pink-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -128,11 +128,11 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-900">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-950">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-pink-100 dark:bg-gray-700 px-3 py-1 text-sm text-pink-600 dark:text-pink-400">
+              <div className="inline-block rounded-lg bg-pink-100 dark:bg-gray-800 px-3 py-1 text-sm text-pink-600 dark:text-pink-400">
                 Testimonials
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900 dark:text-white">
@@ -180,7 +180,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
@@ -201,7 +201,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/signin/signup"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-transparent px-8 text-sm font-medium text-gray-900 dark:text-white shadow-sm transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 dark:focus-visible:ring-gray-600"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-transparent px-8 text-sm font-medium text-gray-900 dark:text-white shadow-sm transition-colors hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 dark:focus-visible:ring-gray-600"
                 >
                   Sign Up Free
                 </Link>
@@ -212,7 +212,7 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Preview Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-900">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-950">
         <div className="container px-4 md:px-6 mx-auto text-center mb-10">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900 dark:text-white mb-4">
             Simple, Transparent Pricing
