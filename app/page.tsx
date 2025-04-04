@@ -6,14 +6,14 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black">
+      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white dark:bg-black">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-zinc-900 dark:text-white">
                 Real People, Real Connections
               </h1>
-              <p className="mx-auto max-w-[700px] text-zinc-400 md:text-xl">
+              <p className="mx-auto max-w-[700px] text-zinc-500 dark:text-zinc-400 md:text-xl">
                 Connect with authentic people in a digital world. Our platform helps you build meaningful relationships without the noise.
               </p>
             </div>
@@ -26,7 +26,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="#features"
-                className="inline-flex h-10 items-center justify-center rounded-md border border-zinc-700 bg-transparent px-8 text-sm font-medium text-white shadow-sm transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-700"
+                className="inline-flex h-10 items-center justify-center rounded-md border border-zinc-300 dark:border-zinc-700 bg-transparent px-8 text-sm font-medium text-zinc-900 dark:text-white shadow-sm transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-300 dark:focus-visible:ring-zinc-700"
               >
                 Learn More
               </Link>
@@ -36,25 +36,25 @@ export default function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-900">
+      <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-100 dark:bg-zinc-900">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-zinc-800 px-3 py-1 text-sm text-pink-500">
+              <div className="inline-block rounded-lg bg-pink-100 dark:bg-zinc-800 px-3 py-1 text-sm text-pink-600 dark:text-pink-500">
                 Features
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-zinc-900 dark:text-white">
                 Everything You Need
               </h2>
-              <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[900px] text-zinc-500 dark:text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Our platform provides all the tools you need to connect with real people and build authentic relationships.
               </p>
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-12 mt-12">
             {/* Feature 1 */}
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-zinc-800 p-6 bg-zinc-950">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-700 bg-zinc-800 text-pink-500">
+            <div className="flex flex-col items-center space-y-2 rounded-lg border border-zinc-200 dark:border-zinc-800 p-6 bg-white dark:bg-zinc-950">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 text-pink-600 dark:text-pink-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -70,15 +70,15 @@ export default function HomePage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white">Verified Profiles</h3>
-              <p className="text-zinc-400 text-center">
+              <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Verified Profiles</h3>
+              <p className="text-zinc-500 dark:text-zinc-400 text-center">
                 Every profile is verified to ensure you're connecting with real people.
               </p>
             </div>
             
             {/* Feature 2 */}
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-zinc-800 p-6 bg-zinc-950">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-700 bg-zinc-800 text-pink-500">
+            <div className="flex flex-col items-center space-y-2 rounded-lg border border-zinc-200 dark:border-zinc-800 p-6 bg-white dark:bg-zinc-950">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 text-pink-600 dark:text-pink-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -94,15 +94,15 @@ export default function HomePage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white">Privacy First</h3>
-              <p className="text-zinc-400 text-center">
+              <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Privacy First</h3>
+              <p className="text-zinc-500 dark:text-zinc-400 text-center">
                 Your data is secure and your privacy is our top priority.
               </p>
             </div>
             
             {/* Feature 3 */}
-            <div className="flex flex-col items-center space-y-2 rounded-lg border border-zinc-800 p-6 bg-zinc-950">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-700 bg-zinc-800 text-pink-500">
+            <div className="flex flex-col items-center space-y-2 rounded-lg border border-zinc-200 dark:border-zinc-800 p-6 bg-white dark:bg-zinc-950">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 text-pink-600 dark:text-pink-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -118,8 +118,8 @@ export default function HomePage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-white">Meaningful Connections</h3>
-              <p className="text-zinc-400 text-center">
+              <h3 className="text-xl font-bold text-zinc-900 dark:text-white">Meaningful Connections</h3>
+              <p className="text-zinc-500 dark:text-zinc-400 text-center">
                 Our algorithm matches you with people who share your interests and values.
               </p>
             </div>
@@ -128,50 +128,50 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-black">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-zinc-800 px-3 py-1 text-sm text-pink-500">
+              <div className="inline-block rounded-lg bg-pink-100 dark:bg-zinc-800 px-3 py-1 text-sm text-pink-600 dark:text-pink-500">
                 Testimonials
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-zinc-900 dark:text-white">
                 What Our Users Say
               </h2>
-              <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[900px] text-zinc-500 dark:text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Don't just take our word for it. Here's what people are saying about our platform.
               </p>
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-12 mt-12">
             {/* Testimonial 1 */}
-            <div className="flex flex-col justify-between space-y-4 rounded-lg border border-zinc-800 p-6 bg-zinc-950">
+            <div className="flex flex-col justify-between space-y-4 rounded-lg border border-zinc-200 dark:border-zinc-800 p-6 bg-white dark:bg-zinc-950">
               <div>
-                <p className="text-zinc-300 italic">
+                <p className="text-zinc-600 dark:text-zinc-300 italic">
                   "This platform has completely changed how I connect with people online. The verification process gives me peace of mind, and I've made some genuine connections."
                 </p>
               </div>
               <div className="flex items-center space-x-4">
-                <div className="h-10 w-10 rounded-full bg-zinc-800"></div>
+                <div className="h-10 w-10 rounded-full bg-zinc-200 dark:bg-zinc-800"></div>
                 <div>
-                  <p className="text-sm font-medium text-white">Sarah Johnson</p>
-                  <p className="text-sm text-zinc-400">Marketing Director</p>
+                  <p className="text-sm font-medium text-zinc-900 dark:text-white">Sarah Johnson</p>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400">Marketing Director</p>
                 </div>
               </div>
             </div>
             
             {/* Testimonial 2 */}
-            <div className="flex flex-col justify-between space-y-4 rounded-lg border border-zinc-800 p-6 bg-zinc-950">
+            <div className="flex flex-col justify-between space-y-4 rounded-lg border border-zinc-200 dark:border-zinc-800 p-6 bg-white dark:bg-zinc-950">
               <div>
-                <p className="text-zinc-300 italic">
+                <p className="text-zinc-600 dark:text-zinc-300 italic">
                   "I was skeptical at first, but the quality of connections I've made here is unmatched. It's refreshing to have meaningful conversations without the usual social media noise."
                 </p>
               </div>
               <div className="flex items-center space-x-4">
-                <div className="h-10 w-10 rounded-full bg-zinc-800"></div>
+                <div className="h-10 w-10 rounded-full bg-zinc-200 dark:bg-zinc-800"></div>
                 <div>
-                  <p className="text-sm font-medium text-white">Michael Chen</p>
-                  <p className="text-sm text-zinc-400">Software Engineer</p>
+                  <p className="text-sm font-medium text-zinc-900 dark:text-white">Michael Chen</p>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400">Software Engineer</p>
                 </div>
               </div>
             </div>
@@ -180,14 +180,14 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-zinc-900 border-t border-zinc-800">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-zinc-900 dark:text-white">
                 Ready to Connect with Real People?
               </h2>
-              <p className="max-w-[600px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[600px] text-zinc-500 dark:text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Join thousands of users who are already building meaningful connections on our platform.
               </p>
             </div>
@@ -201,7 +201,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/signin/signup"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-zinc-700 bg-transparent px-8 text-sm font-medium text-white shadow-sm transition-colors hover:bg-zinc-800 hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-700"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-zinc-300 dark:border-zinc-700 bg-transparent px-8 text-sm font-medium text-zinc-900 dark:text-white shadow-sm transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-300 dark:focus-visible:ring-zinc-700"
                 >
                   Sign Up Free
                 </Link>
@@ -212,12 +212,12 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Preview Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-black">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-black">
         <div className="container px-4 md:px-6 mx-auto text-center mb-10">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white mb-4">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-zinc-900 dark:text-white mb-4">
             Simple, Transparent Pricing
           </h2>
-          <p className="max-w-[600px] mx-auto text-zinc-400 md:text-xl">
+          <p className="max-w-[600px] mx-auto text-zinc-500 dark:text-zinc-400 md:text-xl">
             Choose the plan that's right for you and start connecting with real people today.
           </p>
           <div className="mt-8">
