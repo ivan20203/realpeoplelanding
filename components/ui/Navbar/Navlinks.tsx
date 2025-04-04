@@ -6,6 +6,7 @@ import { handleRequest } from '@/utils/auth-helpers/client';
 import Logo from '@/components/icons/Logo';
 import { usePathname, useRouter } from 'next/navigation';
 import { getRedirectMethod } from '@/utils/auth-helpers/settings';
+import ThemeToggle from '@/components/ui/ThemeToggle/ThemeToggle';
 import s from './Navbar.module.css';
 
 interface NavlinksProps {
@@ -32,7 +33,8 @@ export default function Navlinks({ user }: NavlinksProps) {
           )}
         </nav>
       </div>
-      <div className="flex justify-end space-x-8">
+      <div className="flex justify-end items-center space-x-4">
+        <ThemeToggle />
         {user ? (
           <form onSubmit={(e) => handleRequest(e, SignOut, router)}>
             <input type="hidden" name="pathName" value={usePathname()} />
