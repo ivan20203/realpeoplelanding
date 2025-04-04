@@ -18,7 +18,7 @@ export default function ThemeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5 text-white"
+          className="w-5 h-5 text-zinc-100"
         >
           <path
             strokeLinecap="round"
@@ -33,7 +33,7 @@ export default function ThemeToggle() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-5 h-5 text-zinc-800"
+          className="w-5 h-5 text-zinc-700"
         >
           <path
             strokeLinecap="round"
